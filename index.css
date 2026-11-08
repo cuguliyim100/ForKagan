@@ -17,25 +17,26 @@
 
 .merkez-box{
     background-color: #76334f;
-    width: 90%;
-    max-width: 850px; /* Sabit ve ferah bir max genişlik */
-    padding: 3rem;
+    width: 95%; /* Mobilde ekranı genişçe kullansın */
+    max-width: 850px; /* Bilgisayarda çok büyümesin */
+    padding: 2rem 1.2rem; /* Yanlardaki devasa boşlukları azalttık */
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     text-align: center;
+    margin: 0 auto;
 }
 
 .merkez-box h1{
     color: white;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .merkez-box p{
     color: white;
-    line-height: 1.7;
-    font-size: 1.15rem; /* Yazının çok devasa durup alt alta yığılmasını engeller */
-    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-size: 1.05rem; /* Mobilde okunabilecek ideal boyut */
+    margin-bottom: 1.5rem;
 }
 
 .devam-btn{
