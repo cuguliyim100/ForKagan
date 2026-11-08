@@ -21,9 +21,9 @@
 
 .hikaye-box{
     background-color: #76334f;
-    width: 90%;
-    max-width: 850px;
-    padding: 3rem;
+    width: 95%; /* Mobilde ekranı doldursun */
+    max-width: 850px; /* Bilgisayarda ideal genişlikte dursun */
+    padding: 2rem 1.2rem; /* Yan boşluklar daraltıldı, yazı genişliğe yayılacak */
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
@@ -31,13 +31,13 @@
 .hikaye-box h2{
     color: white;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .hikaye-box p{
     color: white;
-    line-height: 1.7;
-    font-size: 1.1rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
 }
 
 .geri-btn{
