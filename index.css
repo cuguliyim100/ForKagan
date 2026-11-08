@@ -1,11 +1,10 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.main-container{
+.main-container {
     width: 100vw;
     min-height: 100dvh;
     background-color: #522237;
@@ -15,46 +14,43 @@
     padding: 2rem;
 }
 
-.merkez-box{
+.merkez-box {
     background-color: #76334f;
-    width: 95%; /* Mobilde ekranı genişçe kullansın */
-    max-width: 850px; /* Bilgisayarda çok büyümesin */
-    padding: 2rem 1.2rem; /* Yanlardaki devasa boşlukları azalttık */
+    width: 95%;
+    max-width: 850px;
+    padding: 2rem 1.2rem;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     text-align: center;
     margin: 0 auto;
 }
 
-.merkez-box h1{
+.merkez-box h1 {
     color: white;
     margin-bottom: 1.2rem;
     font-size: 1.6rem;
 }
 
-.merkez-box p{
+.merkez-box p {
     color: white;
     line-height: 1.6;
-    font-size: 1.05rem; /* Mobilde okunabilecek ideal boyut */
+    font-size: 1.05rem;
     margin-bottom: 1.5rem;
 }
 
-.devam-btn{
+.devam-btn {
     display: inline-block;
     padding: 1rem 2.5rem;
     font-size: 1.2rem;
     background-color: #f174a0;
     border-radius: 25px;
     font-weight: bold;
+    text-decoration: none;
+    color: white;
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.devam-btn a{
-    color: white;
-    text-decoration: none;
-}
-
-.devam-btn:hover{
+.devam-btn:hover {
     background-color: #f49bc9;
     transform: scale(1.05);
 }
