@@ -6,7 +6,7 @@
 }
 
 .main-container{
-    width: vw;
+    width: 100vw;
     min-height: 100dvh;
     background-color: #522237;
     display: flex;
@@ -17,25 +17,25 @@
 
 .merkez-box{
     background-color: #76334f;
-    width: 80%;
-    max-width: 80%;
-    padding: 2.5rem;
+    width: 90%;
+    max-width: 850px; /* Sabit ve ferah bir max genişlik */
+    padding: 3rem;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0 , 0, 0.8);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
 .merkez-box h1{
     color: white;
     margin-bottom: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .merkez-box p{
     color: white;
-    line-height: 1.5;
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    font-size: 1.15rem; /* Yazının çok devasa durup alt alta yığılmasını engeller */
+    margin-bottom: 2rem;
 }
 
 .devam-btn{
