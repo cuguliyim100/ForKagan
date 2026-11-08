@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tavsiye-sayfa{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #522237;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.medya-box{
+    background-color: #76334f;
+    width: 90%;
+    max-width: 95%;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.resim-alani{
+    flex: 0 0 30%;
+    max-width: 180px;
+}
+
+.resim-link{
+    flex-shrink: 0;
+}
+
+.kutusu-resim{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kutusu-resim:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, alpha0.15);
+}
+
+@media(max-width: 600px){
+    .medya-box{
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .resim-alani{
+        width: 50%;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    .metin-alani{
+        align-items: center;
+        margin-top: 1rem;
+    }
+}
+
+.geri-btn{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background-color: #f174a0;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.geri-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.geri-btn:hover{
+    background-color: #f49bc9;
+    transform: scale(1.05);
+}
+
+.devam-btn{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background-color: #f174a0;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.devam-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.devam-btn:hover{
+    background-color: #f49bc9;
+    transform: scale(1.05);
+}

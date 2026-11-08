@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mizah-sayfa{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #522237;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sayfa-baslik {
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.alt-baslik {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/* PİNTEREST / GALERİ DUVARI DÜZENİ */
+/* PİNTEREST / GALERİ DUVARI DÜZENİ */
+.galeri-grid {
+    width: 100%;
+    max-width: 1100px;
+    column-count: 3;        /* Masaüstünde 3 sütunlu vitrin */
+    column-gap: 2rem;       /* Çerçeveler arası ferah boşluk */
+    margin-bottom: 2.5rem;
+}
+
+/* VİTRİN / ÇERÇEVELİ KART STİLİ (Polaroid Havası) */
+.meme-karti {
+    background-color: #ffffff;
+    padding: 1rem 1rem 1.5rem 1rem; /* Fotoğrafın etrafında eşit çerçeve payı bırakır */
+    border-radius: 8px;           /* Çerçeve köşeleri hafif yumuşak */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Gerçek bir çerçeve/duvar gölgesi */
+    overflow: hidden;
+    break-inside: avoid;          
+    margin-bottom: 2rem;          
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Üzerine gelince vitrinden hafifçe bize doğru yaklaşma efekti */
+.meme-karti:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Çerçevenin içindeki fotoğraf/video */
+.medya {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px; /* Fotoğrafın kendi köşeleri */
+    background-color: #000;
+}
+
+/* Çerçevenin altındaki açıklama alanı */
+.kart-aciklama {
+    padding-top: 1rem;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center; /* Çerçeve altı notları ortalı olunca polaroid havası verir */
+    font-family: sans-serif;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+    .galeri-grid {
+        column-count: 2;    /* Tablette 2 sütun */
+    }
+}
+
+@media (max-width: 600px) {
+    .galeri-grid {
+        column-count: 1;    /* Telefonda tek sütun */
+    }
+}
+
+.geri-btn{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background-color: #f174a0;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.geri-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.geri-btn:hover{
+    background-color: #f49bc9;
+    transform: scale(1.05);
+}
+
+.devam-btn{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    background-color: #f174a0;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.devam-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.devam-btn:hover{
+    background-color: #f49bc9;
+    transform: scale(1.05);
+}
