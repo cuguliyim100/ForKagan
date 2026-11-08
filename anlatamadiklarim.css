@@ -22,10 +22,10 @@
 .hikaye-box{
     background-color: #76334f;
     width: 90%;
-    max-width: 95%;
-    padding: 2.5rem;
+    max-width: 850px;
+    padding: 3rem;
     border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .hikaye-box h2{
@@ -36,8 +36,8 @@
 
 .hikaye-box p{
     color: white;
-    line-height: 1.8;
-    font-size: 1.2rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
 }
 
 .geri-btn{
